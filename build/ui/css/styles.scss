@@ -30,6 +30,7 @@ body {
 
     background-color: rgb(220, 220, 220);
     color: rgb(255, 255, 255);
+    color: #FFFDF7;
     font-family: regular, sans-serif;
     line-height: 1.75em;
 }
@@ -49,8 +50,8 @@ abbr {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    @media all and (min-width: $breakpoint-min) {
-        @include remify('padding-top', 1px);
+    @media all and (min-width: $breakpoint-biggest) {
+        // @include remify('padding-top', 1px);
     }
 }
 
@@ -58,17 +59,47 @@ abbr {
     background-color: rgb(18, 46, 67);
     flex-grow: 1;
     .img-mark {
+        display: none;
         // background-color: rgb(188, 213, 230);
         // background-color: rgb(233, 246, 252);
         // background-color: rgb(229, 248, 255);
         // background-color: rgb(225, 247, 255);
         background-color: rgb(238, 246, 252);
+        background-color: #FFFDF7;
         // background-color: #efefef;
         @include remify('padding-top', 30px);
         @include remify('padding-bottom', 30px);
         @include remify('padding-left', 20px);
         position: relative;
         z-index: 9;
+        @media all and (min-width: $breakpoint-min) {
+            background-color: transparent;
+            & > a {
+                background-color: rgb(238, 246, 252);
+                background-color: #FFFDF7;
+                border-radius: 17.54386%;
+                display: block;
+                padding-top: 20px;
+                padding-right: 26px;
+                padding-bottom: 18px;
+                padding-left: 26px;
+            }
+        }
+        // @media all and (max-width: 1279px) {
+        //     & > a {
+        //         background-color: rgb(238, 246, 252);
+        //         background-color: #FFFDF7;
+        //         border-radius: 17.54386%;
+        //         display: block;
+        //         padding-top: 20px;
+        //         padding-right: 26px;
+        //         padding-bottom: 20px;
+        //         padding-left: 26px;
+        //     }
+        // }
+        // @media all and (min-width: $breakpoint-biggest) {
+        //     background-color: #FFFDF7;
+        // }
         svg {
             display: block;
             height: auto; // insufficient for IE11
@@ -114,7 +145,7 @@ abbr {
     @media all and (min-width: $breakpoint-smaller-min) {
         .content-mark {
             @include remify('padding-top', 24px);
-            @include remify('padding-right', 20px);
+            @include remify('padding-right', 30px);
             @include remify('padding-bottom', 28px);
             @include remify('padding-left', 30px);
         }
@@ -130,8 +161,8 @@ abbr {
         padding-left: 0;
         .img-mark {
             flex-basis: 1;
-            @include remify('padding-top', 30px);
-            @include remify('padding-right', 40px);
+            @include remify('padding-top', 46px);
+            @include remify('padding-right', 14px);
             @include remify('padding-left', 30px);
         }
         .content-mark {
@@ -144,6 +175,7 @@ abbr {
             @include remify('padding-right', 20px);
             @include remify('padding-bottom', 36px);
             @include remify('padding-left', 20px);
+            // transition: .5s all; // viewport resize
             .content-well {
                 @include remify('max-width', 700px);
                 width: 100%;
@@ -158,15 +190,15 @@ abbr {
     }
     @media all and (min-width: 1110px) {
         .content-mark {
-            transform: translateX(-85px);
+            // transform: translateX(-85px);
         }
     }
     @media all and (min-width: $breakpoint-bigger) {
 
     }
     @media all and (min-width: $breakpoint-biggest) {
-        .content-mark {
-
+        .img-mark {
+            // padding-right: 36px;
         }
     }
 }
