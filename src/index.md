@@ -12,4 +12,4 @@ Today Mark is working to make websites and web applications more sustainable for
 
 Mark grew up in the Hudson Valley and Thousand Islands regions of New York State. He earned a B.S. in Telecommunications Management, magna cum laude, at Ithaca College, with a minor in Computer Science. He began his career in Boston, working in digital marketing and software development. In 2016 Mark and his family moved to Vermont. Mark has worked with clients remotely since&nbsp;2007.
 
-Visit <a href="https://reeves.studio">reeves.studio</a> for updates and current&nbsp;services.
+Visit <a href="https://clearbold.com">clearbold.com</a> for updates and current&nbsp;services.
