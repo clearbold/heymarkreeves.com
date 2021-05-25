@@ -116,7 +116,7 @@ abbr {
         @include remify('padding-left', 10px);
         .content-well {
             main {
-                // @include remify('margin-top', 20px);
+                @include remify('margin-top', 20px);
                 &:focus {
                     outline: none;
                 }
@@ -141,7 +141,6 @@ abbr {
                 color: rgb(245, 226, 142);
             }
             footer {
-                background-color: pink;
                 @include remify('margin-top', 60px);
             }
         }
